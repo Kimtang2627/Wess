@@ -1,126 +1,108 @@
-
-
-.big_wrapper{
-    width : 100vw ;
-    display : flex ; 
-    justify-content: center;
+.big_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
-.wrapper{
-    position : relative ;
-    height : 620px ;
-    width : 100vw ;
-    max-width : 1280px ;
-    
-    &:after{
-        content: '';
-        position: absolute;
-        height : 600px ;
-        background: linear-gradient(59.92deg, #A4A4A4 14.72%, rgba(164, 164, 164, 0) 78.19%);
-        mix-blend-mode: multiply;
-        top : 0;
-        left : 0 ;
-        right : 0 ;
-        bottom: 0;
+.wrapper {
+  position: relative;
+  height: 620px;
+  width: 100vw;
+  max-width: 1280px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 600px;
+    background: linear-gradient(
+      59.92deg,
+      #a4a4a4 14.72%,
+      rgba(164, 164, 164, 0) 78.19%
+    );
+    mix-blend-mode: multiply;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .hero {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @media only screen and (max-width: 500px) {
+      display: none;
     }
+  }
 
-    .hero{
+  .hero_mobile {
+    visibility: hidden;
 
-        height : 600px ;
-        width : 100% ;
-        // width : 80vw ;
-        // max-width : 1280px ; 
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        z-index : -1 ;
-        // background-size : 
-       
-
-         @media only screen and (max-width: 500px) {
-            display : none ;
-      }
+    @media only screen and (max-width: 500px) {
+      visibility: visible;
+      height: 600px;
+      width: 100%;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
     }
+  }
 
-    .hero_mobile{
-        
-        visibility: hidden ;
-       
+  .logo {
+    position: absolute;
+    top: 506px;
+    left: 0;
+    width: 100vw;
+    max-width: 1280px;
+    height: 213px;
+    background-size: cover;
+    background-position: top;
+    z-index: 1000;
 
-         @media only screen and (max-width: 500px) {
-            visibility: visible;
-            height : 600px ;
-            width : 100% ;
-            // width : 80vw ;
-            // max-width : 1280px ; 
-            background-size: cover;
-            background-position: top;
-            background-repeat: no-repeat;
-            // background-size : 
-      }
+    @media only screen and (max-width: 500px) {
+      display: none;
     }
-    // > img{
-    //     width : 100% ;    
-    // }
+  }
 
-    .logo{
-        position : absolute ; 
-        top : 506px ;
-        left : 0 ;
-        width : 100vw ; 
-        max-width : 1280px ;
-        height : 213px ;
-        background-size: cover;
-        background-position: top;
-        z-index : 1000;
-        
-        @media only screen and (max-width: 500px) {
-            display : none ;
-      }
+  .logo_mobile {
+    visibility: hidden;
+
+    @media only screen and (max-width: 500px) {
+      visibility: visible;
+      height: 186px;
+      width: 100%;
+      position: absolute;
+      bottom: -133px;
+      background-size: 100vw;
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: 1000;
     }
+  }
 
-    .logo_mobile{
-        
-        visibility: hidden ;
-       
+  > h1 {
+    position: absolute;
+    top: 304px;
+    left: 89px;
+    max-width: 599px;
+    width: 60vw;
+    margin: 0;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+    text-transform: capitalize;
+    color: #f0f0f0;
+    z-index: 1000;
 
-         @media only screen and (max-width: 500px) {
-            visibility: visible;
-            height : 186px ;
-            width : 100% ;
-            position: absolute;
-            bottom : -133px ;
-            // width : 80vw ;
-            // max-width : 1280px ; 
-            background-size: 100vw;
-            background-position: top;
-            background-repeat: no-repeat;
-            z-index : 1000;
-            // background-size : 
-      }
+    @media only screen and (max-width: 620px) {
+      font-size: 30px;
+      line-height: 35px;
+      left: 36px;
+      width: 60vw;
+      top: 350px;
     }
-
- 
-
-    > h1{
-        position: absolute;
-        top : 304px ; 
-        left : 89px ;
-        max-width : 599px ;
-        width : 60vw ;
-        margin : 0 ;
-        font-weight: 700;
-        font-size: 66px;
-        line-height: 77px;
-        text-transform: capitalize;
-        color :  #F0F0F0 ;
-        z-index : 1000 ;
-
-        @media only screen and (max-width: 620px) {
-            font-size: 30px;
-            line-height: 35px;
-            left : 36px ;
-            width : 60vw ;
-            top : 350px ;
-      }
-    }
+  }
 }

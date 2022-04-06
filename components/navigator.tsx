@@ -33,10 +33,6 @@ export default function Navigator({
     selectionC == 'Select'
   ) && true 
    
-    
-      
-  
-
   return (
     <div className={style.wrapper} style={{ background: background }}>
       <div className={style.heading_wrapper}>
