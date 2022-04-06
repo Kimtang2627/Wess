@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    width : 100vw ;
+    margin-bottom : 110px ;
+    
+
+    @media only screen and (max-width: 640px) {
+        margin-bottom : 70px ;
+      }
+
+    .content_wrapper{
+        padding : 1rem ;
+        height : 619px; 
+        background: #f7f7f7;
+        max-width : 1280px ;
+        width : 100%;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+
+        .content{
+           max-width : 669px ;
+           display: flex ;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+        }
+    }
+}

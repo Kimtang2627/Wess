@@ -1,0 +1,74 @@
+@import 'variables';
+
+.wrapper{
+    @include flex-center-center;
+
+    height : 89px ; 
+    width : 100vw ;
+
+    .container{
+        display: flex; 
+        justify-content: space-between ;
+        align-items: center;
+        max-width : 1280px ;
+        width : 100% ;
+        height : 100% ;
+        padding : 88px ;
+
+        @media only screen and (max-width: 640px) {
+            padding : 30px;
+          }
+
+        .logo{
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width: 830px) {
+                width : 100vw ;
+              }
+              
+            .wess{
+                @media only screen and (max-width: 640px) {
+                    width : 113px ;
+                  }
+
+            }
+
+            .burger{
+                visibility: hidden;
+    
+                @media only screen and (max-width: 830px) {
+                    visibility: visible;
+                    padding-top : 10px ;
+                  }
+    
+            }
+
+        }
+
+        .items_container{
+            max-width : 815px; 
+            width : 100vw ;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top : 10px ;
+            color: #2B2D42;
+
+            @media only screen and (max-width: 830px) {
+                display: none;
+              }
+
+            a{
+                font-weight: 700;
+                line-height: 19px;
+                &:hover{
+                    color : $red
+                }
+            }
+        }
+
+       
+    }
+}

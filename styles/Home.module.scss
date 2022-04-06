@@ -1,0 +1,13 @@
+.navigator{
+  position : absolute ;
+  top : 640px ;
+  z-index : 1000;
+}
+
+.empty{
+  
+
+  @media only screen and (max-width: 640px) {
+    height : 475px ;
+}
+}

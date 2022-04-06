@@ -1,0 +1,130 @@
+.select_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 459px;
+  margin-top: 8px;
+
+  .dropdown_container {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    align-items: center;
+    background: #fff;
+    max-width: 223px;
+    width: 20vw;
+    height: 47px;
+    border-radius: 7px;
+
+    @media only screen and (max-width: 640px) {
+      width: 100vw;
+    }
+  }
+
+  .title {
+    position: absolute;
+    left: 12.98px;
+    top: 13px;
+    font-weight: 500;
+    width: 80%;
+    color: #2b2d42;
+    font-size: 16px;
+    line-height: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    letter-spacing: 0.02em;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #fff;
+    top: 45px;
+    max-height: 15rem;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 7px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+  }
+
+  .option {
+    color: #2b2d42;
+    padding: 13px 0 13px 13px;
+    border-bottom: 1px solid rgba(43, 45, 66, 0.1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+
+    &:hover {
+      background: #f7f7f7;
+      color: #bb060a;
+    }
+  }
+
+  .option:nth-child(1) {
+    border-top: 1px solid rgba(43, 45, 66, 0.1);
+  }
+
+  .border {
+    left: 190px;
+    top: 4px;
+    height: 48px;
+    position: absolute;
+    border: 0.5px solid #dadada;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  label {
+    color: #fff;
+    font-family: 'f37', sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+    z-index: 99;
+  }
+
+  .select {
+    width: 25vw;
+  }
+}
+
+.club-dropdown {
+  background: #f8f8f8 !important;
+  border: 1px solid #e5e5e5;
+}
+
+.league-dropdown {
+  display: flex;
+  border: hidden;
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.club-options {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  top: 41px;
+  left: -7px;
+  width: 165px;
+  overflow-y: hidden;
+}
+
+.downarrow {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
